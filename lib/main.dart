@@ -27,14 +27,14 @@ class _MiPaginaInicialState extends State<MiPaginaInicial> {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-      length: 4,
+      length: 5,
       child: Scaffold(
         appBar: AppBar(
           title: Text("Comex Jesús Cano"),
           bottom: TabBar(
             tabs: [
               Tab(
-                text: "Colores",
+                text: "Color",
                 icon: Icon(Icons.color_lens),
               ), //Texto Icono
               Tab(
@@ -42,11 +42,15 @@ class _MiPaginaInicialState extends State<MiPaginaInicial> {
                 icon: Icon(Icons.format_paint),
               ), //Texto Icono
               Tab(
+                text: "Shop",
+                icon: Icon(Icons.shopping_cart),
+              ), //Texto Icono
+              Tab(
                 text: "Us",
                 icon: Icon(Icons.location_on),
               ), //Texto Icono
               Tab(
-                text: "Config",
+                text: "Conf",
                 icon: Icon(Icons.settings_accessibility),
               ), //Texto Icono
             ],
@@ -69,9 +73,16 @@ class _MiPaginaInicialState extends State<MiPaginaInicial> {
           ),
           Center(
             child: Icon(
-              Icons.location_on,
+              Icons.shopping_cart,
               size: 350,
               color: Colors.green,
+            ),
+          ),
+          Center(
+            child: Icon(
+              Icons.location_on,
+              size: 350,
+              color: Colors.blue,
             ),
           ),
           Center(
